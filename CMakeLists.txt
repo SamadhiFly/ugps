@@ -5,7 +5,7 @@ ADD_DEFINITIONS(-Os -ggdb -Wextra -Wall -Werror --std=gnu99 -Wmissing-declaratio
 
 SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
 
-SET(SOURCES main.c nmea)
+SET(SOURCES main.c nmea.c)
 
 IF(DEBUG)
   ADD_DEFINITIONS(-DDEBUG -g3)
@@ -22,5 +22,5 @@ ADD_EXECUTABLE(ugps ${SOURCES})
 TARGET_LINK_LIBRARIES(ugps ${ubox} ${ubus} m)
 
 INSTALL(TARGETS ugps
-	RUNTIME DESTINATION sbin
+  RUNTIME DESTINATION sbin
 )

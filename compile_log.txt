@@ -1,0 +1,45 @@
+vmuser@ubuntu-vm:~/openwrt-mod$ make package/utils/ugps/compile V=s
+###
+make[2]: Entering directory '/home/vmuser/openwrt-mod/package/utils/ugps'
+touch /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.prepared_b7ac9cdd3339efd377261456e8a11afb_6664517399ebbbc92a37c5bb081b5c53_check
+. /home/vmuser/openwrt-mod/include/shell.sh; zstdcat /home/vmuser/openwrt-mod/dl/ugps-2025.10.04~9a351d41.tar.zst | tar -C /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.. -xf -
+[ ! -d ./src/ ] || cp -fpR ./src/. /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41
+touch /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.prepared_b7ac9cdd3339efd377261456e8a11afb_6664517399ebbbc92a37c5bb081b5c53
+rm -f /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.configured_*
+rm -f /home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl/stamp/.ugps_installed
+mkdir -p "/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41"
+###
+(cd /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41; CFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41=ugps-2025.10.04~9a351d41 -ffunction-sections -fdata-sections -flto=auto -fno-fat-lto-objects -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -I/home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl/usr/include " CXXFLAGS="-Os -pipe -fno-caller-saves -fno-plt -fhonour-copts -fmacro-prefix-map=/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41=ugps-2025.10.04~9a351d41 -ffunction-sections -fdata-sections -flto=auto -fno-fat-lto-objects -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -I/home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl/usr/include -ffunction-sections -fdata-sections -flto=auto -fno-fat-lto-objects " LDFLAGS="-L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/usr/lib -L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/lib -fuse-ld=bfd -Wl,--gc-sections -flto=auto -fuse-linker-plugin -znow -zrelro " cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_SYSTEM_NAME=Linux -DCMAKE_SYSTEM_VERSION=1 -DCMAKE_SYSTEM_PROCESSOR=x86_64 -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS_RELEASE="-DNDEBUG" -DCMAKE_CXX_FLAGS_RELEASE="-DNDEBUG" -DCMAKE_C_COMPILER_LAUNCHER="" -DCMAKE_C_COMPILER="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc" -DCMAKE_CXX_COMPILER_LAUNCHER="" -DCMAKE_CXX_COMPILER="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-g++" -DCMAKE_ASM_COMPILER_LAUNCHER="" -DCMAKE_ASM_COMPILER="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc" -DCMAKE_EXE_LINKER_FLAGS:STRING="-L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/usr/lib -L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/lib -fuse-ld=bfd -Wl,--gc-sections -flto=auto -fuse-linker-plugin -znow -zrelro" -DCMAKE_MODULE_LINKER_FLAGS:STRING="-L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/usr/lib -L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/lib -fuse-ld=bfd -Wl,--gc-sections -flto=auto -fuse-linker-plugin -znow -zrelro -Wl,-Bsymbolic-functions" -DCMAKE_SHARED_LINKER_FLAGS:STRING="-L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/usr/lib -L/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/lib -fuse-ld=bfd -Wl,--gc-sections -flto=auto -fuse-linker-plugin -znow -zrelro -Wl,-Bsymbolic-functions" -DCMAKE_AR="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc-ar" -DCMAKE_NM="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc-nm" -DCMAKE_RANLIB="/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc-ranlib" -DCMAKE_FIND_ROOT_PATH="/home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl/usr;/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl" -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=BOTH -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_STRIP=: -DCMAKE_INSTALL_PREFIX=/usr -DDL_LIBRARY=/home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl -DCMAKE_PREFIX_PATH=/home/vmuser/openwrt-mod/staging_dir/target-x86_64_musl -DCMAKE_SKIP_RPATH=TRUE -DCMAKE_EXPORT_PACKAGE_REGISTRY=FALSE -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=TRUE -DCMAKE_FIND_USE_PACKAGE_REGISTRY=FALSE -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=TRUE -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=FALSE -DCMAKE_FIND_PACKAGE_NO_SYSTEM_PACKAGE_REGISTRY=TRUE -DCMAKE_GENERATOR="Ninja" /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41 )
+Not searching for unused variables given on the command line.
+-- The C compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (0.7s)
+CMake Warning (dev) at CMakeLists.txt:20 (ADD_EXECUTABLE):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/nmea.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done (0.1s)
+-- Build files have been written to: /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41
+touch /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.configured_68b329da9893e34099c7d8ad5cb9c940
+rm -f /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.built
+touch /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/.built_check
+###
+MAKEFLAGS="" /home/vmuser/openwrt-mod/staging_dir/host/bin/ninja  -j1 -C /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41 
+ninja: Entering directory `/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41'
+[3/3] Linking C executable ugps
+DESTDIR="/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/ipkg-install" MAKEFLAGS="" /home/vmuser/openwrt-mod/staging_dir/host/bin/ninja  -j1 -C /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41 install
+ninja: Entering directory `/home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41'
+[0/1] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/vmuser/openwrt-mod/build_dir/target-x86_64_musl/ugps-2025.10.04~9a351d41/ipkg-install/usr/sbin/ugps
+###
