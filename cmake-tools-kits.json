@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Clang 18.1.8 x86_64-pc-linux-gnu",
+    "compilers": {
+      "C": "/usr/bin/clang",
+      "CXX": "/usr/bin/clang++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 12.3.0 x86_64-linux-gnu",
+    "compilers": {
+      "C": "/usr/bin/gcc",
+      "CXX": "/usr/bin/g++"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 13.3.0 x86_64-linux-gnu",
+    "compilers": {
+      "C": "/usr/bin/gcc-13",
+      "CXX": "/usr/bin/g++-13"
+    },
+    "isTrusted": true
+  },
+  {
+    "name": "GCC 14.3.0 x86_64-openwrt-linux-musl",
+    "compilers": {
+      "C": "/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-gcc",
+      "CXX": "/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin/x86_64-openwrt-linux-musl-g++"
+    },
+    "isTrusted": true,
+    "environmentVariables": {
+      "PATH": "/home/vmuser/openwrt-mod/staging_dir/toolchain-x86_64_gcc-14.3.0_musl/bin;/home/vmuser/openwrt-mod/staging_dir/host/bin;/home/vmuser/openwrt-mod/staging_dir/hostpkg/bin;${env:PATH}"
+    }
+  }
+]
