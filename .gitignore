@@ -64,6 +64,9 @@ Thumbs.db
 # Binaries
 *.dll
 *.exe
+*.elf
+*.out
+*.app
 
 # CMakeCache
 CMakeLists.txt.user
@@ -112,6 +115,7 @@ qrc_*.cpp
 Thumbs.db
 *.res
 *.rc
+*_autogen/
 /.qmake.cache
 /.qmake.stash
 
@@ -124,10 +128,10 @@ Thumbs.db
 .dep_*
 .ninja_*
 *.ninja
+.lupdate/
 .pkgdir/
 ipkg-*/
 apk-*/
 
 # Custom exclude files
-/ugps
 
