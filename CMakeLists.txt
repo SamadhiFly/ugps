@@ -24,3 +24,10 @@ TARGET_LINK_LIBRARIES(ugps ${ubox} ${ubus} m)
 INSTALL(TARGETS ugps
   RUNTIME DESTINATION sbin
 )
+
+# 调用创建 compile_commands.json 链接的脚本
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+include(CreateCompileCommandsSymlink)
+create_compile_commands_symlink(
+  LINK_PATH ${CMAKE_SOURCE_DIR}/compile_commands.json
+)

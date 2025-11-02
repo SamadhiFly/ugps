@@ -13,10 +13,10 @@ CMAKE_PRESETS_BUILD='build-openwrt'
 
 [ -e ${BUILD_NINJA_FILE} ] && echo "### cleaning..." && cmake --build --preset ${CMAKE_PRESETS_BUILD} --target clean
 
-files=("build.ninja" "install_manifest.txt" "compile_commands.json" "CMakeCache.txt" "cmake_install.cmake")
+files=(".ninja_deps" ".ninja_log" "build.ninja" "install_manifest.txt" "compile_commands.json" "CMakeCache.txt" "cmake_install.cmake")
 for file in "${files[@]}"; do [ -f "$file" ] && echo "removing file ${file}" && rm -f "$file"; done
 
-dirs=("CMakeFiles")
+dirs=(".cache" ".cmake" ".lupdate" "CMakeFiles" "${TARGET_FILE_NAME}_autogen")
 for dir in "${dirs[@]}"; do [ -d "$dir" ] && echo "removing dir ${dir}" && rm -rf "$dir"; done
 
 echo "### clean.sh done."
